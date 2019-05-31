@@ -21,7 +21,7 @@ RIGHT = {"action": "right"}
 while (True):
     # get game
     game_request_response = requests.get(API_REQUEST, headers)
-    if (game_request_response.json()["status"] == "FINSIHED"):
+    if (game_request_response.json()["status"] == "FINISHED"):
         print("Completed.")
     print(game_request_response.json())
     # solve level
